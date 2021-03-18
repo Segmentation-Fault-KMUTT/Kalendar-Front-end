@@ -13,10 +13,21 @@ const Login = () => {
   }, []);
   return (
     <div className="text-center" style={{ paddingTop: "100px" }}>
-      <div>
-        <img src={Logo} style={{ width: "200px" }} alt="logo"></img>
-      </div>
-      <div className="fs-1 fw-bold">Kalendar</div>
+      <Link to="/">
+        <Button.Text
+          config={{
+            inner: (
+              <>
+                <div>
+                  <img src={Logo} style={{ width: "200px" }} alt="logo"></img>
+                </div>
+                <div className="fs-1 fw-bold">Kalendar</div>
+              </>
+            ),
+          }}
+        />
+      </Link>
+
       <form>
         <div className="pt-3">
           <Form.InputGroup1
@@ -97,7 +108,17 @@ const Register = () => {
       {/*<div>
         <img src={Logo} style={{ width: "100px" }} alt="logo"></img>
       </div>*/}
-      <div className="fs-5 fw-bold">Kalendar</div>
+      <Link to="/">
+        <Button.Text
+          config={{
+            inner: (
+              <>
+                <div className="fs-5 fw-bold">Kalendar</div>
+              </>
+            ),
+          }}
+        />
+      </Link>
       <div className="px-2">
         <div
           className="bg-gray-1 p-3 mx-auto mt-3"

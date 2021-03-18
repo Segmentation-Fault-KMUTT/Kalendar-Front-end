@@ -7,10 +7,20 @@ import { createState } from "./helper";
 const Home = () => {
   return (
     <div className="text-center" style={{ paddingTop: "120px" }}>
-      <div>
-        <img src={Logo} style={{ width: "250px" }} alt="logo"></img>
-      </div>
-      <div className="fs-1 fw-bold">Kalendar</div>
+      <Link to="/">
+        <Button.Text
+          config={{
+            inner: (
+              <>
+                <div>
+                  <img src={Logo} style={{ width: "250px" }} alt="logo"></img>
+                </div>
+                <div className="fs-1 fw-bold">Kalendar</div>
+              </>
+            ),
+          }}
+        />
+      </Link>
       <div className="pt-5">
         <Link to="/login">
           <Button.BrightBlue
