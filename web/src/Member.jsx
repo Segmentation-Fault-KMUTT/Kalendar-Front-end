@@ -98,7 +98,10 @@ const Register = () => {
         <img src={Logo} style={{ width: "100px" }} alt="logo"></img>
       </div>*/}
       <div className="fs-5 fw-bold">Kalendar</div>
-      <div className="bg-gray-1 p-3 mx-auto mt-3" style={{ maxWidth: "600px" }}>
+      <div
+        className="bg-gray-1 p-3 mx-auto mt-3 mx-2"
+        style={{ maxWidth: "600px" }}
+      >
         <div className="fs-4 fw-bold">Create Your Account</div>
         <form>
           <div className="pt-3">
