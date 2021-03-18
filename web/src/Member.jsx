@@ -98,79 +98,81 @@ const Register = () => {
         <img src={Logo} style={{ width: "100px" }} alt="logo"></img>
       </div>*/}
       <div className="fs-5 fw-bold">Kalendar</div>
-      <div
-        className="bg-gray-1 p-3 mx-auto mt-3 mx-2"
-        style={{ maxWidth: "600px" }}
-      >
-        <div className="fs-4 fw-bold">Create Your Account</div>
-        <form>
-          <div className="pt-3">
-            <Form.InputGroup2
-              config={{
-                width: "350px",
-                icon: "fas fa-user-alt",
-                type: "text",
-                placeholder: "Username",
-                value: username.val,
-                onChange: (v) => {
-                  username.val = v;
-                },
-              }}
-            />
-          </div>
-          <div className="pt-3">
-            <Form.InputGroup2
-              config={{
-                width: "350px",
-                icon: "fas fa-envelope-open",
-                type: "email",
-                placeholder: "Email",
-                value: email.val,
-                onChange: (v) => {
-                  email.val = v;
-                },
-              }}
-            />
-          </div>
-          <div className="pt-3">
-            <Form.InputGroup2
-              config={{
-                width: "350px",
-                icon: "fas fa-lock",
-                type: "password",
-                placeholder: "Password",
-                value: password.val,
-                onChange: (v) => {
-                  password.val = v;
-                },
-              }}
-            />
-          </div>
-          <div className="pt-3">
-            <Form.InputGroup2
-              config={{
-                width: "350px",
-                icon: "fas fa-unlock-alt",
-                type: "password",
-                placeholder: "Verifying Password",
-                value: password2.val,
-                onChange: (v) => {
-                  password2.val = v;
-                },
-              }}
-            />
-          </div>
+      <div className="px-2">
+        <div
+          className="bg-gray-1 p-3 mx-auto mt-3"
+          style={{ maxWidth: "600px" }}
+        >
+          <div className="fs-4 fw-bold">Create Your Account</div>
+          <form>
+            <div className="pt-3">
+              <Form.InputGroup2
+                config={{
+                  width: "350px",
+                  icon: "fas fa-user-alt",
+                  type: "text",
+                  placeholder: "Username",
+                  value: username.val,
+                  onChange: (v) => {
+                    username.val = v;
+                  },
+                }}
+              />
+            </div>
+            <div className="pt-3">
+              <Form.InputGroup2
+                config={{
+                  width: "350px",
+                  icon: "fas fa-envelope-open",
+                  type: "email",
+                  placeholder: "Email",
+                  value: email.val,
+                  onChange: (v) => {
+                    email.val = v;
+                  },
+                }}
+              />
+            </div>
+            <div className="pt-3">
+              <Form.InputGroup2
+                config={{
+                  width: "350px",
+                  icon: "fas fa-lock",
+                  type: "password",
+                  placeholder: "Password",
+                  value: password.val,
+                  onChange: (v) => {
+                    password.val = v;
+                  },
+                }}
+              />
+            </div>
+            <div className="pt-3">
+              <Form.InputGroup2
+                config={{
+                  width: "350px",
+                  icon: "fas fa-unlock-alt",
+                  type: "password",
+                  placeholder: "Verifying Password",
+                  value: password2.val,
+                  onChange: (v) => {
+                    password2.val = v;
+                  },
+                }}
+              />
+            </div>
 
-          <div className="pt-5">
-            <Button.BrightBlue
-              config={{
-                className: "fw-bold",
-                inner: "SIGN UP",
-                width: "200px",
-              }}
-            />
-          </div>
-        </form>
+            <div className="pt-5">
+              <Button.BrightBlue
+                config={{
+                  className: "fw-bold",
+                  inner: "SIGN UP",
+                  width: "200px",
+                }}
+              />
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   );
