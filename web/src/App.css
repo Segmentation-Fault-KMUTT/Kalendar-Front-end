@@ -1,0 +1,37 @@
+:root {
+  --blue1: #0057a0;
+  --blue2: #003053;
+  --blue3: #00d3e4;
+  --blue4: #418caa;
+  --gray1: #637f92;
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.bg-blue-solid {
+  background-color: #0057a0;
+}
+.bg-blue-grad {
+  background: linear-gradient(var(--blue1), var(--blue2)) fixed;
+}
+.bg-blue-1 {
+  background-color: var(--blue3);
+}
+.bg-blue-2 {
+  background-color: var(--blue4);
+}
+.bg-gray-1 {
+  background-color: var(--gray1);
+}
+
+input.phd-white::placeholder {
+  color: white;
+}
