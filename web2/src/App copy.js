@@ -1,10 +1,5 @@
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route /*Link*/,
-  useLocation,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route /*Link*/, useLocation } from "react-router-dom";
 import Home from "./Home";
 import { Login, Register } from "./Member";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
