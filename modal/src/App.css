@@ -1,0 +1,25 @@
+.modal-header {
+  background-color: #007bff;
+  border-color: rgb(51, 51, 51);
+}
+
+.modal-title {
+  margin: auto;
+  color: white;
+}
+
+.modal-body {
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border-color: rgb(51, 51, 51);
+}
+
+.modal-footer {
+  background-color: rgb(51, 51, 51);
+  border-color: rgb(51, 51, 51);
+}
+
+.modal-content {
+  background-color: rgb(51, 51, 51);
+}
