@@ -25,10 +25,16 @@
                 const password = document.querySelector('#password').value;
 
                 const user = {email,password};
+                const props = {title:"meet asia"}
+                const id = "gVc9YJmFfIl0GIrsFLdQ"
+
                 //createUser(user);
                 loginUser(user);
                 apiLoginToken();
-
+                //getApiEventsId(id);
+                //patchEvent(props,id);
+                getApiEventsByPeriod();
+                //deleteEvent(id)
                 console.log(email)
             });
         </script>
