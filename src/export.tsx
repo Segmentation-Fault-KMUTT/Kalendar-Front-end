@@ -61,50 +61,23 @@ const ExportModal = ({ message /* test props */ }: { message: string }) => {
               <Form onSubmit={onSubmit} enabledSubmit={enabledSubmit()}>
                 <div className="pt-2">
                   <div className="pt-2">
-                    
+                    <Button
+                      color="blue3">
+                      PDF Download
+                    </Button>
                   </div>
-                  <div className="pt-2">
-                    <Input
+                  <div className="form-check form-switch">
+                  <Input
                       type="text"
-                      icon="far fa-file-pdf"
-                      placeholder="Location"
+                      icon="far fa-file"
+                      placeholder="File name"
                       value={form.getValue("id") as string}
                       onChange={(value) => {
                         form.updateValue("id", value);
                       }}
                     />
                   </div>
-                  <div className="form-check form-switch">
-                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label className="form-check-label">All day</label>
-                  </div>
-                  <div className="form-check form-switch">
-                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label className="form-check-label">Start</label>
-                  </div>
-                  <div className="form-check form-switch">
-                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label className="form-check-label">End</label>
-                  </div>
-                  <div className="form-check form-switch">
-                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label className="form-check-label">Repeat</label>
-                  </div>
-                  <div className="form-check form-switch">
-                    <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault"/>
-                    <label className="form-check-label">Alert</label>
-                  </div>
-                  <div className="pt-2">
-                    <Input
-                      type="text"
-                      icon=""
-                      placeholder="Note"
-                      value={form.getValue("id") as string}
-                      onChange={(value) => {
-                        form.updateValue("id", value);
-                      }}
-                    />
-                  </div>
+                  
                   <div>
                     {/* submit button required for submitting through enter/return key */}
                     <Button type="submit"></Button>
